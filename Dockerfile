@@ -24,7 +24,7 @@ RUN pip install pyvmomi
 
 ## not sure why am I clonning this, copied this step from the pyvmomi Docker file.
 RUN git clone https://github.com/vmware/pyvmomi.git 
-
+RUN git clone https://github.com/vmware/vsphere-automation-sdk-python
 
 
 
@@ -34,6 +34,7 @@ ENV VSPHERE65_AUTOMATION_SDK_PYTHON=VMware-vSphere-Automation-SDK-Python-6.5.0-4
 ENV VMWARE_UTILS_INSTALLER=installerFile_pythonautomationsdk.sh
 ENV VSPHERE65_MGMT_SDK=VMware-vSphere-SDK-6.5.0-4571253.zip									
 
+
 ## giving the permissions to edit the file. 
 COPY installerFile_pythonautomationsdk.sh /tmp/
 RUN chmod +rwx /tmp/$VMWARE_UTILS_INSTALLER 
@@ -42,8 +43,8 @@ RUN chmod +rwx /tmp/$VMWARE_UTILS_INSTALLER
 
 
 # downloading the python automation sdk. copied from 
-RUN wget http://blr-dbc504.eng.vmware.com/amb/vmw-sdk-bundles-65/$VSPHERE65_AUTOMATION_SDK_PYTHON -P /tmp/
-RUN wget http://blr-dbc504.eng.vmware.com/amb/vmw-sdk-bundles-65/VMware-vSphere-SDK-6.5.0-4571253.zip -P /tmp/	
+#RUN wget http://blr-dbc504.eng.vmware.com/amb/vmw-sdk-bundles-65/$VSPHERE65_AUTOMATION_SDK_PYTHON -P /tmp/
+#RUN wget http://blr-dbc504.eng.vmware.com/amb/vmw-sdk-bundles-65/VMware-vSphere-SDK-6.5.0-4571253.zip -P /tmp/	
 
 
 
