@@ -64,16 +64,16 @@ pip install --upgrade pip
 
 apt-get install zip unzip
 
-unzip /tmp/$VSPHERE65_AUTOMATION_SDK_PYTHON && \
-rm -f /tmp/$VSPHERE65_AUTOMATION_SDK_PYTHON
+#unzip /tmp/$VSPHERE65_AUTOMATION_SDK_PYTHON && \
+#rm -f /tmp/$VSPHERE65_AUTOMATION_SDK_PYTHON
 
 #wget http://blr-dbc504.eng.vmware.com/amb/vmw-sdk-bundles-65/VMware-vSphere-SDK-6.5.0-4571253.zip -P /tmp/
 #chmod +rwx /tmp/$VSPHERE65_MGMT_SDK 
 #wget http://blr-dbc504.eng.vmware.com/amb/vmw-sdk-bundles-65/$VSPHERE65_MGMT_SDK -P /tmp/
-ls /tmp
-unzip /tmp/$VSPHERE65_MGMT_SDK && \
-rm -f /tmp/$VSPHERE65_MGMT_SDK && \
-mv /root/SDK /root/vSphere-Management-SDK-6.5
+#ls /tmp
+#unzip /tmp/$VSPHERE65_MGMT_SDK && \
+#rm -f /tmp/$VSPHERE65_MGMT_SDK && \
+#mv /root/SDK /root/vSphere-Management-SDK-6.5
 
 
 
