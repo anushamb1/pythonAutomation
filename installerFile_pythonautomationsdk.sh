@@ -78,5 +78,5 @@ apt-get install zip unzip
 
 
 
-
+mkdir /root/samples
 
