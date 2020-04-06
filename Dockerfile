@@ -1,4 +1,5 @@
 FROM ubuntu:latest
+#FROM ubuntu:latest
 ENV TERM linux
 WORKDIR /root
 RUN apt update
